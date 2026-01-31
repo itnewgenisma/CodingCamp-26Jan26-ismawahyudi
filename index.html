@@ -17,7 +17,7 @@
       <div class="flex items-center gap-3">
         <!-- LOGO -->
         <div class="logo"></div>
-        <span class="site-name">Isma Wahyudi</span>
+        <span class="site-name">ARTEMIS ANIMATION</span>
       </div>
       <!-- NAVIGASI MENU -->
       <nav class="nav">
@@ -31,18 +31,27 @@
     <main>
       <!-- HOME-PAGE -->
       <section id="home-page" class="hero">
-        <h1 id="welcome-speech" class="hero-title">Selamat Datang di Websiteku</h1>
-        <p class="hero-text">Terima kasih telah mengunjungi portofolio saya. Di sini Anda dapat melihat berbagai proyek yang mencerminkan dedikasi, kreativitas, dan profesionalisme saya.</p>
+        <h1 id="welcome-speech" class="hero-title">Selamat Datang di ARTEMIS ANIMATION</h1>
+        <p class="hero-text">ARTEMIS ANIMATION menghadirkan animasi berkualitas untuk menghidupkan cerita dan karakter.</p>
       </section>
 
       <!-- OUR PROFILE -->
-      <section id="our-profile-page" class="section">
-        <div class="section-container">
-          <h2 class="section-title">About Me</h2>
-          <p class="section-text">
-            Saya merupakan mahasiswa aktif jurusan Teknik Informatika di Universitas Raharja dengan minat pada bidang Software Engineering. Saat ini saya sedang mengembangkan kemampuan pengembangan perangkat lunak, serta memiliki keahlian
-            di bidang Graphic Design yang mendukung pembuatan produk digital secara visual dan fungsional.
-          </p>
+      <section id="our-profile-page" class="section about-section">
+        <div class="section-container about-grid">
+          <!-- DESKRIPSI NYA -->
+          <div class="about-text">
+            <h2 class="section-title">ABOUT ARTEMIS ANIMATION</h2>
+            <p class="section-text">
+              ARTEMIS ANIMATION adalah studio kreatif yang bergerak di bidang animasi. Kami berfokus pada pembuatan karya animasi dengan visual yang kuat, karakter yang hidup, dan storytelling yang matang.
+              <br /><br />
+              Setiap proyek kami kerjakan dengan perhatian pada detail dan kualitas, untuk memastikan hasil yang tidak hanya menarik secara visual, tetapi juga menyampaikan pesan secara efektif.
+            </p>
+          </div>
+
+          <!-- FOTONYA -->
+          <div class="about-image">
+            <img src="./IMG/office.jpg" alt="Office Artemis Animation" />
+          </div>
         </div>
       </section>
 
@@ -50,22 +59,22 @@
       <section id="portfolio-page" class="section bg-white">
         <div class="section-container">
           <h2 class="section-title">Our Portfolio</h2>
-          <p class="section-subtitle">Beberapa proyek yang merepresentasikan kemampuan dan pengalaman saya.</p>
+          <p class="section-subtitle">Beberapa proyek yang kami garap untuk merepresentasikan kemampuan dan pengalaman kami di bidang animasi.</p>
           <div class="portfolio-grid">
             <!-- PORTFOLIO SATU -->
             <div class="portfolio-card">
-              <img src="./IMG/present2.jpeg" alt="Project 1" />
+              <img src="./IMG/Legenda-Perang-Arcanum-Api-Takhta-Terakhir.png" alt="Project 1" />
               <div class="portfolio-content">
-                <h3>Juara 3 Web Design Competition</h3>
-                <p>Meraih Juara 3 dalam Web Design Competition dengan desain website yang kreatif dan user-friendly.</p>
+                <h3>Legenda Perang Arcanum: Api Takhta Terakhir</h3>
+                <p>Garapan animasi pertama kami.</p>
               </div>
             </div>
             <!-- PORTFOLIO DUA -->
             <div class="portfolio-card">
-              <img src="./IMG/present.jpeg" alt="Project 2" />
+              <img src="./IMG/Di-Antara-Bel-Pulang-dan-Perasaan.png" alt="Project 2" />
               <div class="portfolio-content">
-                <h3>Graphic Designer Intern</h3>
-                <p>Pengalaman magang sebagai Graphic Designer dalam mengerjakan berbagai kebutuhan visual brand.</p>
+                <h3>Diantara Bel Pulang dan Perasaan</h3>
+                <p>Garapan animasi terbaru kami.</p>
               </div>
             </div>
           </div>
@@ -84,14 +93,38 @@
                 <label>Name</label>
                 <input type="text" id="name" required />
               </div>
+
               <div>
                 <label>Email</label>
                 <input type="email" id="email" required />
               </div>
+
+              <div>
+                <label>Tanggal Lahir</label>
+                <input type="date" id="birthdate" required />
+              </div>
+
+              <div class="gender-row">
+                <label>Jenis Kelamin</label>
+
+                <div class="gender-options">
+                  <label>
+                    <input type="radio" name="gender" value="Laki-laki" required />
+                    Laki-laki
+                  </label>
+
+                  <label>
+                    <input type="radio" name="gender" value="Perempuan" />
+                    Perempuan
+                  </label>
+                </div>
+              </div>
+
               <div>
                 <label>Message</label>
                 <textarea id="message" rows="5" required></textarea>
               </div>
+
               <button type="submit">Send Message</button>
             </form>
             <!-- MESSAGE DITAMPILKAN -->
@@ -104,7 +137,7 @@
       </section>
     </main>
 
-    <footer class="footer">© 2026 Isma Wahyudi. All rights reserved.</footer>
+    <footer class="footer">© 2026 Artemis Animation. All rights reserved.</footer>
     <!-- LINK JAVASCRIPT -->
     <script src="JS/script.js"></script>
   </body>

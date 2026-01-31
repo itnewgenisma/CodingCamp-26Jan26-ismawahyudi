@@ -11,7 +11,7 @@ function welcomeMessage() {
     userResponse = "Tamu";
   }
   // Display the welcome message
-  document.getElementById("welcome-speech").innerText = `Halo, ${userResponse}! Selamat datang di website Isma Wahyudi.`;
+  document.getElementById("welcome-speech").innerText = `Halo, ${userResponse}! Selamat Datang di ARTEMIS ANIMATION.`;
 }
 // Function to handle message submission (currently empty)
 
@@ -24,6 +24,8 @@ function submitMessage(event) {
   // NGAMBIL DATA DARI FORM
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
+  const birthdate = document.getElementById("birthdate").value;
+  const gender = document.querySelector('input[name="gender"]:checked').value;
   const message = document.getElementById("message").value;
   const messageList = document.getElementById("message-list");
 
@@ -34,7 +36,9 @@ function submitMessage(event) {
   // NGISI KOTAK
   messageCard.innerHTML = `
     <p class="font-bold">Name: ${name}</p>
-    <p class="text-sm text-gray-600">Email: ${email}</p>
+    <p class="text-sm">Email: ${email}</p>
+    <p class="text-sm">Tanggal Lahir: ${birthdate}</p>
+    <p class="text-sm">Jenis Kelamin: ${gender}</p>
     <p class="mt-2">${message}</p>
   `;
 
