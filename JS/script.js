@@ -5,7 +5,7 @@ welcomeMessage();
 // Function to display a welcome message to the user
 function welcomeMessage() {
   // Prompt the user for their name
-  let userResponse = prompt("Selamat datang di website Isma, siapa nama anda?");
+  let userResponse = prompt("Selamat datang di website saya, siapa nama anda?");
   // Handle case where user cancels or enters an empty name
   if (userResponse === null || userResponse.trim() === "") {
     userResponse = "Tamu";
