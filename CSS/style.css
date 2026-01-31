@@ -1,0 +1,316 @@
+/* SEMUA */
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* CSS HEADER */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  background-image: url(../../img/present3.JPG);
+  background-size: cover;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+.site-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e5e7eb;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: #9ca3af;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #7c7cff;
+}
+
+/* CSS HOMEPAGE */
+.hero {
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  background: radial-gradient(circle at top, rgba(124, 124, 255, 0.18), #0f172a 60%);
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #f9fafb;
+}
+
+.hero-text {
+  max-width: 700px;
+  margin: 20px auto 0;
+  color: #9ca3af;
+}
+
+/* CSS SECTION */
+.section {
+  padding: 80px 20px;
+}
+
+.section-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f3f4f6;
+}
+
+.section-subtitle {
+  margin-top: 8px;
+  color: #9ca3af;
+}
+
+.section-text {
+  margin-top: 20px;
+  line-height: 1.8;
+  color: #d1d5db;
+}
+
+/* CSS PORTFOLIO */
+.portfolio-grid {
+  margin-top: 40px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio-card {
+  background: linear-gradient(180deg, #111827, #020617);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+}
+
+.portfolio-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.portfolio-content {
+  padding: 20px;
+}
+
+.portfolio-content h3 {
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.portfolio-content p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.portfolio-card,
+.form-card,
+.message-box {
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+#portfolio-page {
+  background: #0b1220;
+}
+
+#portfolio-page .section-title {
+  color: #f9fafb;
+}
+
+#portfolio-page .section-subtitle {
+  color: #94a3b8;
+}
+
+/* CSS MESSAGE */
+.message-grid {
+  margin-top: 40px;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.form-card,
+.message-box {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-card button:hover {
+  opacity: 0.9;
+}
+
+.form-card label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #020617;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e5e7eb;
+}
+
+.form-card input::placeholder,
+.form-card textarea::placeholder {
+  color: #64748b;
+}
+
+.form-card button {
+  margin-top: 16px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #7c7cff, #22d3ee);
+  color: #020617;
+  font-weight: 600;
+}
+
+.form-card,
+.message-box {
+  text-align: left;
+  background: rgba(17, 24, 39, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+}
+
+.form-card label,
+.message-box h3 {
+  color: #e5e7eb;
+}
+
+.message-box {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-box h3 {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+#message-list {
+  margin-top: 12px;
+  overflow-y: auto;
+  flex: 1;
+  padding-right: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#message-list div {
+  background: #020617;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
+}
+
+#message-us-page {
+  background: radial-gradient(circle at top, rgba(124, 124, 255, 0.15), #020617 65%);
+}
+
+/* CSS FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+}
+
+/* BUAT RESPONSIF */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 20px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 1.9rem;
+  }
+
+  .hero-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 60px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .message-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .message-box {
+    height: 300px;
+  }
+}
+
+/* BUAT MATIIN HOVERNYA VERSI MOBILE */
+@media (hover: none) {
+  .portfolio-card:hover {
+    transform: none;
+  }
+}

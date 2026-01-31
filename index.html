@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Isma Wahyudi</title>
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- LINK TAILWIND CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="flex items-center gap-3">
+        <!-- LOGO -->
+        <div class="logo"></div>
+        <span class="site-name">Isma Wahyudi</span>
+      </div>
+      <!-- NAVIGASI MENU -->
+      <nav class="nav">
+        <a class="nav-link" href="#home-page">Home</a>
+        <a class="nav-link" href="#our-profile-page">Our Profile</a>
+        <a class="nav-link" href="#portfolio-page">Portfolio</a>
+        <a class="nav-link" href="#message-us-page">Message Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOME-PAGE -->
+      <section id="home-page" class="hero">
+        <h1 id="welcome-speech" class="hero-title">Selamat Datang di Websiteku</h1>
+        <p class="hero-text">Terima kasih telah mengunjungi portofolio saya. Di sini Anda dapat melihat berbagai proyek yang mencerminkan dedikasi, kreativitas, dan profesionalisme saya.</p>
+      </section>
+
+      <!-- OUR PROFILE -->
+      <section id="our-profile-page" class="section">
+        <div class="section-container">
+          <h2 class="section-title">About Isma</h2>
+          <p class="section-text">
+            Saya merupakan mahasiswa aktif jurusan Teknik Informatika di Universitas Raharja dengan minat pada bidang Software Engineering. Saat ini saya sedang mengembangkan kemampuan pengembangan perangkat lunak, serta memiliki keahlian
+            di bidang Graphic Design yang mendukung pembuatan produk digital secara visual dan fungsional.
+          </p>
+        </div>
+      </section>
+
+      <!-- OUR PORTFOLIO -->
+      <section id="portfolio-page" class="section bg-white">
+        <div class="section-container">
+          <h2 class="section-title">Our Portfolio</h2>
+          <p class="section-subtitle">Beberapa proyek yang merepresentasikan kemampuan dan pengalaman saya.</p>
+          <!-- PORTFOLIO SATU -->
+          <div class="portfolio-grid">
+            <div class="portfolio-card">
+              <img src="../img/present2.jpeg" alt="Project 1" />
+              <div class="portfolio-content">
+                <h3>Juara 3 Web Design Competition</h3>
+                <p>Meraih Juara 3 dalam Web Design Competition dengan desain website yang kreatif dan user-friendly.</p>
+              </div>
+            </div>
+            <!-- PORTFOLIO DUA -->
+            <div class="portfolio-card">
+              <img src="../img/present.jpeg" alt="Project 2" />
+              <div class="portfolio-content">
+                <h3>Graphic Designer Intern</h3>
+                <p>Pengalaman magang sebagai Graphic Designer dalam mengerjakan berbagai kebutuhan visual brand.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MESSAGE US -->
+      <section id="message-us-page" class="section">
+        <div class="section-container">
+          <h2 class="section-title">Message Us</h2>
+          <p class="section-subtitle">Punya pertanyaan atau ingin bekerja sama? Kirim pesan di bawah ini.</p>
+          <!-- MESSAGE MASUK -->
+          <div class="message-grid">
+            <form onsubmit="submitMessage(event)" class="form-card">
+              <div>
+                <label>Name</label>
+                <input type="text" id="name" required />
+              </div>
+              <div>
+                <label>Email</label>
+                <input type="email" id="email" required />
+              </div>
+              <div>
+                <label>Message</label>
+                <textarea id="message" rows="5" required></textarea>
+              </div>
+              <button type="submit">Send Message</button>
+            </form>
+            <!-- MESSAGE DITAMPILKAN -->
+            <div class="message-box">
+              <h3>Messages</h3>
+              <div id="message-list"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">© 2026 Isma Wahyudi. All rights reserved.</footer>
+    <!-- LINK JAVASCRIPT -->
+    <script src="JS/script.js"></script>
+  </body>
+</html>
