@@ -402,3 +402,44 @@ input[type="date"] {
   gap: 6px;
   white-space: nowrap;
 }
+
+/* KURANG RESPONSIF */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 100px 16px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr; /* jadi 1 kolom */
+    gap: 48px;
+    text-align: center;
+  }
+
+  .about-text .section-title {
+    font-size: 2rem;
+  }
+
+  .about-text .section-text {
+    font-size: 0.95rem;
+    line-height: 1.9;
+  }
+
+  .about-image img {
+    height: 260px;
+    border-radius: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 80px 14px;
+  }
+
+  .about-text .section-title {
+    font-size: 1.7rem;
+  }
+
+  .about-image img {
+    height: 220px;
+  }
+}
